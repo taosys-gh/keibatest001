@@ -15,7 +15,7 @@ namespace KeibaTest001
         public Form1()
         {
             InitializeComponent();
-            //てすと
+            //てすと１１１
         }
     }
 }
