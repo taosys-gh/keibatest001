@@ -182,23 +182,23 @@ namespace KeibaTest001
                     {
                         //正常
                         //bytData = new byte[1];
-                        txtLog.AppendText(Buff + "\r\n [end_>0]");
+                        txtLog.AppendText("\r\n [end_>0] \r\n" + Buff);
                     }
                     else if (ReturnCode == -1)
                     {
                         //ファイルの切れ目
                         //ファイル名表示
-                        txtLog.AppendText(BuffName + "\r\n [end_-1]");
+                        txtLog.AppendText("\r\n [end_-1] \r\n" + BuffName);
 
                     }
                     else if (ReturnCode == 0)
                     {
-                        txtLog.AppendText(BuffName + "\r\n [end_0]");
+                        txtLog.AppendText("\r\n [end_0] \r\n" + BuffName);
                         break;
                     }
                     else if (ReturnCode < -1)
                     {
-                        txtLog.AppendText(BuffName + "\r\n [end_else]");
+                        txtLog.AppendText("\r\n [end_else] \r\n" + BuffName);
 
                         break;
                     }

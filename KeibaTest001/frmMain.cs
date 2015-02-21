@@ -36,19 +36,19 @@ namespace KeibaTest001
                 //'エラー
                 if (ReturnCode != 0)
                 {
-                    MessageBox.Show("JVInitエラー:" + ReturnCode.ToString());
+                   lblMesage.Text = "JVInitエラー:" + ReturnCode.ToString();
                     //終了
                     return;
                     //'正常
                 }
                 else
                 {
-                    MessageBox.Show("JVInit正常終了:" + ReturnCode.ToString());
+                    lblMesage.Text = "JVInit正常終了:" + ReturnCode.ToString();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("異常終了:" + ex);
+                lblMesage.Text = "異常終了:" + ex;
             }
 
         }
