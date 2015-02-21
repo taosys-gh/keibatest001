@@ -30,26 +30,38 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.axJVLink = new AxJVDTLabLib.AxJVLink();
+            this.cmdJVLinkDialog = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.axJVLink)).BeginInit();
             this.SuspendLayout();
             // 
             // axJVLink
             // 
             this.axJVLink.Enabled = true;
-            this.axJVLink.Location = new System.Drawing.Point(147, 89);
+            this.axJVLink.Location = new System.Drawing.Point(156, 127);
             this.axJVLink.Name = "axJVLink";
             this.axJVLink.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axJVLink.OcxState")));
             this.axJVLink.Size = new System.Drawing.Size(240, 240);
             this.axJVLink.TabIndex = 0;
             // 
-            // Form1
+            // cmdJVLinkDialog
+            // 
+            this.cmdJVLinkDialog.Location = new System.Drawing.Point(181, 69);
+            this.cmdJVLinkDialog.Name = "cmdJVLinkDialog";
+            this.cmdJVLinkDialog.Size = new System.Drawing.Size(75, 23);
+            this.cmdJVLinkDialog.TabIndex = 2;
+            this.cmdJVLinkDialog.Text = "JV読込";
+            this.cmdJVLinkDialog.UseVisualStyleBackColor = true;
+            this.cmdJVLinkDialog.Click += new System.EventHandler(this.cmdJVLinkDialog_Click);
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Controls.Add(this.cmdJVLinkDialog);
             this.Controls.Add(this.axJVLink);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmMain";
+            this.Text = "メイン画面";
             ((System.ComponentModel.ISupportInitialize)(this.axJVLink)).EndInit();
             this.ResumeLayout(false);
 
@@ -57,7 +69,8 @@
 
         #endregion
 
-        private AxJVDTLabLib.AxJVLink axJVLink;
+        public AxJVDTLabLib.AxJVLink axJVLink;
+        private System.Windows.Forms.Button cmdJVLinkDialog;
     }
 }
 
